@@ -156,3 +156,30 @@ body{
 .splide__pagination__page.is-active{
   background-color: #ff6f59 !important;
 }
+
+
+@media (max_width:576px){
+  .splide__splide{
+    display: block;
+    text-align: center;
+  }
+
+  .slider-container .review-img{
+    margin-inline:auto;
+  }
+  .splide__arrow{
+    font-size: 1.5rem;
+  }
+
+  .splide__arrow--prev{
+    left: 0.5rem;
+  }
+  .splide__arrow--prev{
+    right: 0.5rem;
+  }
+
+  .slider-container .bottom-quote{
+    right:0;
+
+  }
+}
