@@ -9,7 +9,7 @@ const Testimonial = () => {
         <section className='testimonial-container'>
             <div className="title">
                 <h1>Testimonial</h1>
-                <p>What are members saying</p>
+                <p>What are Clients say</p>
             </div>
 
             <div className="slider-container">
