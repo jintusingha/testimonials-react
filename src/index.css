@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+  background-color: #f6f6f6;
+}
+/* Testimonail container */
+
+.testimonial-container{
+  max-width: 800px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h1{
+  font-size: 2rem;
+
+}
+
+/* slider container */
+
+
+.slider-container{
+  position: relative;
+  user-select: none;
+  padding-inline: 1rem;
+
+}
+
+.slider-container .quote{
+  position: absolute;
+  z-index: -1;
+
+}
+
+
+.slider-container .top-quote{
+  position: absolute;
+  top:-1rem;
+  left: 1rem;
+
+}
+
+
+.slider-container .bottom-quote{
+  position: absolute;
+  bottom:-3rem;
+  right: -0.5rem;
+  transform: rotate(180deg);
+
+
+}
+
+
+
+
+
+.slider-container .review-img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.slider-container .content .text{
+  color:#484646;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+
+.slider-container .content .rating{
+  display: inline-block;
+  line-height: 1;
+
+}
+
+.slider-container .content .star{
+  color:#ff6f59;
+  font-size: 1.1rem;
+}
+
+.slider-container .content .user{
+  font-weight: 600;
+}
+
+/* splide customization */
+
+
+.splide__track {
+  position: relative;
+  border-radius: 1rem;
+}
+.splide__slide{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem 1.875rem;
+  border-radius: 1rem;
+  gap: 1rem;
+
+
+}
+
+
+.splide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers it vertically */
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #505050;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.splide__arrow--prev {
+  left: -3rem; /* Adjust based on layout */
+}
+
+.splide__arrow--next {
+  right: -3rem; /* Adjust based on layout */
+}
+.splide__pagination__page{
+  height: 10px;
+  width: 10px;
+  opacity: 1;
+}
+
+.splide__pagination__page.is-active{
+  background-color: #ff6f59 !important;
+}
